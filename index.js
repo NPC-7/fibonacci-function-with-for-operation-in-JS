@@ -1,0 +1,24 @@
+function fibonacciGenerator (n) {
+//Do NOT change any of the code above 👆
+    
+    //Write your code here:
+    
+    var output=[];
+    
+    for(var i=0;i<n;i++){
+        if(i>1){
+            output.push(output[i-1]+output[i-2]);
+        }else if(i===0 || i===1){
+            output.push(i);
+        }
+    }
+    
+    return output;
+    
+    
+    
+    //Return an array of fibonacci numbers starting from 0.
+    
+//Do NOT change any of the code below 👇
+}
+
